@@ -92,26 +92,6 @@ function timer() {
 
 
 
-// document.addEventListener("DOMContentLoaded", function () {
-//   var infoDiv = document.getElementById("info-div");
-//   var mainContent = document.getElementById("main-content");
-
-//   // Display the information initially
-//   infoDiv.style.display = "block";
-
-//   function enableMainContent() {
-//     // Hide the information
-//     infoDiv.style.display = "none";
-//     // Enable pointer events for the main content
-//     mainContent.style.pointerEvents = "auto";
-//   }
-
-//   // Attach the enableMainContent function to the button click event
-//   document.querySelector('.information button').addEventListener('click', enableMainContent);
-// });
-
-
-
 // fireworks animation js
 // helper functions
 const PI2 = Math.PI * 2
