@@ -1,0 +1,291 @@
+.desertbg {
+    width: 100%;
+    z-index: -2;
+    margin-top: -379px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 640px;
+    filter: blur(2px);
+}
+
+.countries {
+    background-color: #FFDFDF;
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-size: 15px;
+}
+
+option {
+    background-color: white;
+}
+
+.information {
+    position: absolute;
+    left: 69%;
+    top: 8%;
+    background-color: rgb(0,0,0,0.50);
+    color:white;
+    padding: 20px;
+    border-radius: 5px;
+    animation: zoomIn 7s ease-in-out forwards;
+}
+
+  /* The arrow pointer */
+  .information:after {
+    content: ' ';
+    width: 0px;
+    height: 0px;
+    border-top: 10px solid transparent;
+    border-left: 10px solid transparent;
+    border-bottom: 10px solid rgb(0,0,0,0.50);
+    border-right: 10px solid transparent;
+    position: absolute;
+    top: -19px;
+    right: 40px;
+    margin-left: -10px;
+  }
+
+.information button {
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid gray;
+    background-color: grey;
+    float: right;
+    margin-top: 10px;
+    color: white;
+    padding: 5px 7px;
+}
+.information button:hover{
+    background-color: white;
+    color: black;
+}
+
+@keyframes zoomIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.8);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    100%{
+        opacity: 0;
+        transform: scale(0.8);
+    }
+  }
+
+.navbar {
+    .header {
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        padding: 2px;
+        box-shadow: 1px 1px 9px grey;
+        display: flex;
+        flex-direction: row;
+        background-color: #FFDFDF;
+
+        .logo {
+            height: 50px;
+            width: 50px;
+            margin-left: 30px;
+            margin-top: 3px;
+        }
+
+        .logo_text {
+            margin-left: 20px;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bolder;
+        }
+    }
+
+    .country_options {
+        margin-left: 80%;
+        margin-top: 25px;
+        /* pointer-events: none;
+        Disable pointer events initially */
+    }
+}
+
+.countdown_timer {
+    text-align: center;
+    margin-top: -60px;
+}
+
+.clockdiv_class {
+    font-family: sans-serif;
+    color: black;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+    margin-top: -10px;
+}
+
+.clockdiv_class>div {
+    padding: 10px;
+    display: inline-block;
+}
+
+.clockdiv_class>span {
+    display: inline-block;
+}
+
+.smalltext {
+    padding-top: 10px;
+    font-size: 14px;
+    font-family: 'Agbalumo';
+}
+
+.days,
+.hours,
+.minutes,
+.seconds {
+    font-size: 60px;
+    background-color: #EBF3E8;
+    border-radius: 10px;
+    padding: 50px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+
+.colan {
+    position: relative;
+    top: -35px;
+    font-size: 60px;
+}
+
+.title {
+
+    .slogan {
+        margin-top: 150px;
+        text-align: center;
+        font-family: 'Agbalumo';
+        font-size: 30px;
+    }
+
+    .cat_fly_img {
+        margin-left: 78%;
+        margin-top: -50px;
+    }
+}
+
+.cat_rest_img {
+    position: relative;
+    top: -275px;
+    left: 320px;
+    mix-blend-mode: darken;
+}
+
+
+
+
+
+
+/* fireworks animation */
+
+canvas {
+    display: block;
+    width: 100%;
+}
+
+.newyear {
+    position: absolute;
+    font-size: 70px;
+    top: 150px;
+    margin-left: 32%;
+    font-family: 'My Soul';
+    font-weight: 400;
+    text-align: center;
+}
+
+/* parent text */
+.celebrations {
+    display: none;
+    position: relative;
+    z-index: -2;
+}
+
+/* text animation */
+.parent {
+    position: absolute;
+    margin-left: 40%;
+    top: 300px;
+}
+
+.content1 {
+    height: 100%;
+    font-size: 120px;
+    float: left;
+}
+
+.content2 {
+    height: 100%;
+    font-size: 120px;
+    float: left;
+    animation-delay: .2s;
+}
+
+.content3 {
+    height: 100%;
+    font-size: 120px;
+    float: left;
+    animation-delay: .4s;
+}
+
+.content4 {
+    height: 100%;
+    font-size: 120px;
+    float: left;
+    animation-delay: 1.2s;
+}
+
+.parent div {
+    animation-name: animation_01;
+    animation-duration: 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes animation_01 {
+
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
+}
+
+
+/* ----------------------------------------------------------- */
+
+
+.footer {
+    background-color: black;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    padding: 13.5px;
+
+
+    .just_footer {
+        color: white;
+        margin: 0px;
+        text-align: center;
+    }
+}
+
+
+

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Year Countdown 2024</title>
+    <link rel="stylesheet" href="newyear_countdown.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agbalumo&family=Carter+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Noto+Serif+Georgian:wght@600&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&family=Lavishly+Yours&family=My+Soul&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="header">
+            <img src="./lottie file/stopwatch.png" class="logo" alt="">
+            <p class="logo_text">New Year Countdown</p>
+        </div>
+        <div class="country_options" id="main-content">
+            <select class="countries" name="countries" id="countries" onChange="timer(this.selectedIndex);">
+                <option value="India" >INDIA</option>
+                <option value="Japan">JAPAN</option>
+                <option value="China">China</option>
+                <option value="Russia">Russia(Mascow)</option>
+                <option value="Usa">USA(Newyork)</option>
+                <option value="Australia">Australia(Canberra)</option>
+                <option value="Brazil">Brazil</option>
+                <option value="Canada">Canada(Ottawa)</option>
+                <option value="Germany">Germany</option>
+                <option value="France">France</option>
+                <option value="Uk">UK</option>
+                <option value="Indonesia">Indonesia(Jakarta)</option>
+                <option value="South Korea">South Korea</option>
+                <option value="Argentina">Argentina</option>
+                <option value="Egypt">Egypt</option>
+                <option value="Israel">Israel</option>
+                <option value="Italy">Italy</option>
+                <option value="Spain">Spain</option>
+                <option value="Switzerland">Switzerland</option>
+                <option value="Uae">UAE</option>
+            </select>
+        </div>
+        <div class="information" id="info-div">
+            Change location to see timer of that country!<br />
+        </div>
+    </div>
+    <div id="title" class="title">
+        <p class="slogan">A countdown to a brand new chapter in life.</p>
+        <img src="./lottie file/Animation - 1698685451129.gif" class="cat_fly_img" alt="">
+    </div>
+    <div class="countdown_timer">
+        <div id="time" class="clockdiv_class">
+            <!-- Display Days -->
+            <div class="clockdiv_class_items">
+                <span class="days" id="day"></span>
+                <div class="smalltext">Days</div>
+            </div>
+            <div class="colan">:</div>
+            <!-- Display Hours -->
+            <div class="clockdiv_class_items">
+                <span class="hours" id="hour"></span>
+                <div class="smalltext">Hours</div>
+            </div>
+            <div class="colan">:</div>
+            <!-- Display Minutes -->
+            <div class="clockdiv_class_items">
+                <span class="minutes" id="minute"></span>
+                <div class="smalltext">Minutes</div>
+            </div>
+            <div class="colan">:</div>
+            <!-- Display Seconds -->
+            <div class="clockdiv_class_items">
+                <span class="seconds" id="second"></span>
+                <div class="smalltext">Seconds</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="celebrations" class="celebrations">
+        <div>
+            <p class="newyear">Happy New Year</p>
+            <canvas id="birthday" class="fireworks"></canvas>
+        </div>
+        <div class="parent">
+            <div class="content1">2</div>
+            <div class="content2">0</div>
+            <div class="content3">2</div>
+            <div class="content4">4</div>
+        </div>
+    </div>
+
+
+    <img id="bg_img" src="./lottie file/Landscape.png" class="desertbg" alt="bg_img">
+    <img id="cat_rest_img" src="./lottie file/Animation - 1698588333824.gif" class="cat_rest_img" alt="">
+    <div class="footer">
+        <p class="just_footer">© 2023 Ajay Kumar All rights reserved.</p>
+    </div>
+
+    <script src="./newyear_countdown.js"></script>
+</body>
+
+</html>
